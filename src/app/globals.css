@@ -24,3 +24,144 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Shadcn-style typography classes */
+.shadcn-text {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "rlig" 1, "calt" 1;
+  text-rendering: optimizeLegibility;
+}
+
+.shadcn-h1 {
+  scroll-margin: 5rem;
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1;
+}
+
+@media (min-width: 1024px) {
+  .shadcn-h1 {
+    font-size: 3rem;
+  }
+}
+
+.shadcn-h2 {
+  scroll-margin: 5rem;
+  font-size: 1.875rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
+.shadcn-h3 {
+  scroll-margin: 5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
+.shadcn-p {
+  line-height: 1.75;
+}
+
+.shadcn-p:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+.shadcn-lead {
+  font-size: 1.25rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.shadcn-small {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.shadcn-muted {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* Shadcn-style button */
+.shadcn-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: colors 150ms ease;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+.shadcn-button:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* Shadcn-style input */
+.shadcn-input {
+  display: flex;
+  height: 2.25rem;
+  width: 100%;
+  border-radius: 0.375rem;
+  border: 1px solid #e5e7eb;
+  background-color: transparent;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition: colors 150ms ease;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+.shadcn-input::placeholder {
+  color: #9ca3af;
+}
+
+.shadcn-input:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Shadcn-style label */
+.shadcn-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Shadcn-style transitions */
+.shadcn-transition {
+  transition: all 200ms ease-in-out;
+}
+
+/* Font weights matching shadcn patterns */
+.shadcn-weight-normal {
+  font-weight: 400;
+}
+
+.shadcn-weight-medium {
+  font-weight: 500;
+}
+
+.shadcn-weight-semibold {
+  font-weight: 600;
+}
+
+.shadcn-weight-bold {
+  font-weight: 700;
+}
+
+.shadcn-weight-extrabold {
+  font-weight: 800;
+}

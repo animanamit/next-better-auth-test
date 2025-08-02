@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Better Auth migrations
+better-auth_migrations/
+
+# SQLite database
+database.sqlite
+*.sqlite
+*.db
